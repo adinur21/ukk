@@ -1,6 +1,10 @@
 # Usage
 
 Please first install node and other packages on your instances.
+https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
+
+https://expressjs.com/en/starter/installing.html  --> Install express
+
 Click Use this api and then create new repository
 
 Install `node_modules` on this project
@@ -12,7 +16,7 @@ Install `node_modules` on this project
   yarn
 ```
 
-After that, you can setup the database. go to model and edit `dbConnection.js`.
+After that, you can setup the database. go to dir model and edit `dbConnection.js`.
 
 ```bash
 const db = mySql.createPool({
