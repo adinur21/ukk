@@ -1,5 +1,6 @@
 # Usage
 
+Please first install node and other packages on your instances.
 Click Use this api and then create new repository
 
 Install `node_modules` on this project
