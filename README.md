@@ -4,8 +4,6 @@ Please first install node and other packages on your instances.
 
 https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
 
-https://expressjs.com/en/starter/installing.html  --> Install express
-
 Click Use this api and then create new repository
 
 Install `node_modules` on this project
@@ -16,6 +14,15 @@ Install `node_modules` on this project
   # use yarn
   yarn
 ```
+
+https://expressjs.com/en/starter/installing.html  --> Install express
+
+https://www.npmjs.com/package/nodemon  --> Install nodemon
+
+https://www.thelinuxfaq.com/npm/npm-packages/cors#:~:text=%24%20sudo%20npm%20install%20cors%20%24%20sudo%20npm,command%20as%20below%2C%20%24%20sudo%20npm%20update%20cors  -->> Install cors
+
+https://www.thelinuxfaq.com/npm/npm-packages/body-parser  --> Install body parser
+
 
 After that, you can setup the database. go to dir model and edit `dbConnection.js`.
 
@@ -173,7 +180,7 @@ Response :
 }
 ```
 
-## Authors
+## Thanks to Authors
 
 - [@setyawannn](https://www.github.com/setyawannn)
 - [@kkafi09](https://www.github.com/kkafi09)
