@@ -53,7 +53,7 @@ const db = mySql.createPool({
 })
 ```
 
-Use these commandt to create database and create table
+Use these command to create database and create table
 ```bash
   # create database
   CREATE DATABASE (database_name);
