@@ -1,6 +1,19 @@
-# Usage
+# How to use the apps
 
 Please first install node and other packages on your instances.
+
+Run the following command as a user with sudo privileges to download and execute the NodeSource installation script:
+```bash
+apt install update
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+
+Once the NodeSource repository is enabled, install Node.js and npm:
+```bash
+sudo apt install nodejs
+sudo apt install build-essential
+```
+
 Install `node_modules` on this project
 
 ```bash
@@ -14,9 +27,13 @@ Install `node_modules` on this project
 ```
 
 https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
+
 https://expressjs.com/en/starter/installing.html  --> Install express
+
 https://www.npmjs.com/package/nodemon  --> Install nodemon
+
 https://www.thelinuxfaq.com/npm/npm-packages/cors#:~:text=%24%20sudo%20npm%20install%20cors%20%24%20sudo%20npm,command%20as%20below%2C%20%24%20sudo%20npm%20update%20cors  -->> Install cors
+
 https://www.thelinuxfaq.com/npm/npm-packages/body-parser  --> Install body parser
 
 Second please install git and clone the apps
@@ -35,6 +52,7 @@ const db = mySql.createPool({
   database: "cloud_api"
 })
 ```
+
 Use these commandt to create database and create table
 ```bash
   # create database
@@ -67,9 +85,11 @@ Run the project
   yarn start
 ```
 
-Finally test the apps with Elastic Load Balancer
+Finally test the apps with Elastic Load Balancer dns
+```bash
 <dns endpoint ELB>/api/guru/v1
-  
+```
+
 # API Spec
 
 ## Get all guru
