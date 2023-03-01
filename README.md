@@ -1,30 +1,31 @@
 # Usage
 
 Please first install node and other packages on your instances.
-
-https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
-
-Click Use this api and then create new repository
-
 Install `node_modules` on this project
 
 ```bash
-  npm Install
+  npm Install --save express
+  npm install nodemon
+  npm install cors
+  npm install bodyparser
 
   # use yarn
   yarn
 ```
 
+https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
 https://expressjs.com/en/starter/installing.html  --> Install express
-
 https://www.npmjs.com/package/nodemon  --> Install nodemon
-
 https://www.thelinuxfaq.com/npm/npm-packages/cors#:~:text=%24%20sudo%20npm%20install%20cors%20%24%20sudo%20npm,command%20as%20below%2C%20%24%20sudo%20npm%20update%20cors  -->> Install cors
-
 https://www.thelinuxfaq.com/npm/npm-packages/body-parser  --> Install body parser
 
+Second please install git and clone the apps
+```bash
+apt install git -y
+git clone https://github.com/adinur21/ukk
+```
 
-After that, you can setup the database. go to dir model and edit `dbConnection.js`.
+After that, you can setup the database. go to directory model and edit `dbConnection.js`.
 
 ```bash
 const db = mySql.createPool({
@@ -34,7 +35,7 @@ const db = mySql.createPool({
   database: "cloud_api"
 })
 ```
-
+Use these commandt to create database and create table
 ```bash
   # create database
   CREATE DATABASE (database_name);
@@ -66,6 +67,9 @@ Run the project
   yarn start
 ```
 
+Finally test the apps with Elastic Load Balancer
+<dns endpoint ELB>/api/guru/v1
+  
 # API Spec
 
 ## Get all guru
