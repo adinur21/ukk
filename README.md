@@ -26,15 +26,15 @@ Install `node_modules` on this project
   yarn
 ```
 
-https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/  --> Install node and npm
+[Install node and npm](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-22-04/)
 
-https://expressjs.com/en/starter/installing.html  --> Install express
+[Install express](https://expressjs.com/en/starter/installing.html)
 
-https://www.npmjs.com/package/nodemon  --> Install nodemon
+[Install nodemon](https://www.npmjs.com/package/nodemon)
 
-https://www.thelinuxfaq.com/npm/npm-packages/cors#:~:text=%24%20sudo%20npm%20install%20cors%20%24%20sudo%20npm,command%20as%20below%2C%20%24%20sudo%20npm%20update%20cors  -->> Install cors
+[Install cors](https://www.thelinuxfaq.com/npm/npm-packages/cors#:~:text=%24%20sudo%20npm%20install%20cors%20%24%20sudo%20npm,command%20as%20below%2C%20%24%20sudo%20npm%20update%20cors)
 
-https://www.thelinuxfaq.com/npm/npm-packages/body-parser  --> Install body parser
+[Install body parser](https://www.thelinuxfaq.com/npm/npm-packages/body-parser)
 
 Second please install git and clone the apps
 ```bash
@@ -53,8 +53,12 @@ const db = mySql.createPool({
 })
 ```
 
-Use these command to create database and create table
+Use these command to connect, create database and create table
 ```bash
+
+  # connect database
+  mysql -h <RDS endpoin> -u <username> -p
+  
   # create database
   CREATE DATABASE (database_name);
   
@@ -67,7 +71,7 @@ Use these command to create database and create table
   );
 
   # insert guru
-  INSERT INTO 'guru' (nama_guru, mapel_guru, sekolah_guru) VALUES (?, ?, ?);
+  INSERT INTO 'guru' (nama_guru, mapel_guru, sekolah_guru) VALUES ('Adi','cloud','SMK Telkom Malang');
   
   # update guru
   UPDATE 'guru' SET nama_guru = ?, mapel_guru = ?, sekolah_guru = ? WHERE id_guru = ?;
