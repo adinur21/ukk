@@ -54,6 +54,7 @@ const db = mySql.createPool({
 ```
 
 Use these command to connect, create database and create table
+Make sure your SQL engine is 8.0.XX
 ```bash
   #Install MySQL connector
   apt install mysql-client -y
@@ -65,11 +66,11 @@ Use these command to connect, create database and create table
  show databases;
  
   # create table
-  CREATE TABLE `guru` (
-  `id_guru` int(11) AUTO_INCREMENT PRIMARY KEY,
-  `nama_guru` varchar(255),
-  `mapel_guru` varchar(255),
-  `sekolah_guru` varchar(255)
+  CREATE TABLE guru (
+  id_guru int(11) AUTO_INCREMENT PRIMARY KEY,
+  nama_guru varchar(255),
+  mapel_guru varchar(255),
+  sekolah_guru varchar(255)
   );
 
   # insert guru
