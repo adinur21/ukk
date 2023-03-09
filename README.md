@@ -74,13 +74,13 @@ Make sure your SQL engine is 8.0.XX
   );
 
   # insert guru
-  INSERT INTO 'guru' (nama_guru, mapel_guru, sekolah_guru) VALUES ('Adi','cloud','SMK Telkom Malang');
+  INSERT INTO guru (nama_guru, mapel_guru, sekolah_guru) VALUES ('Adi','cloud','SMK Telkom Malang');
   
   # update guru
-  UPDATE 'guru' SET nama_guru = ?, mapel_guru = ?, sekolah_guru = ? WHERE id_guru = ?;
+  UPDATE guru SET nama_guru = ?, mapel_guru = ?, sekolah_guru = ? WHERE id_guru = ?;
   
   # delete guru
-  DELETE FROM 'guru' WHERE id_guru = ?;
+  DELETE FROM guru WHERE id_guru = ?;
   
 ```
 Run the project
