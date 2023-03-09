@@ -59,9 +59,9 @@ Use these command to connect, create database and create table
   # connect database
   mysql -h <RDS endpoin> -u <username> -p
   
-  # create database
-  CREATE DATABASE (database_name);
-  
+ #show database
+ show databases;
+ 
   # create table
   CREATE TABLE `guru` (
   `id_guru` int(11) AUTO_INCREMENT PRIMARY_KEY,
