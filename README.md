@@ -66,7 +66,7 @@ Use these command to connect, create database and create table
  
   # create table
   CREATE TABLE `guru` (
-  `id_guru` int(11) AUTO_INCREMENT PRIMARY_KEY,
+  `id_guru` int(11) AUTO_INCREMENT PRIMARY KEY,
   `nama_guru` varchar(255),
   `mapel_guru` varchar(255),
   `sekolah_guru` varchar(255)
