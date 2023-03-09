@@ -18,9 +18,9 @@ Install `node_modules` on this project
 
 ```bash
   npm install --save express
-  npm install nodemon
-  npm install cors
-  npm install bodyparser
+  npm install -g nodemon
+  npm install -g cors
+  npm install -g body-parser
 
   # use yarn
   yarn
