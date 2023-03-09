@@ -55,7 +55,9 @@ const db = mySql.createPool({
 
 Use these command to connect, create database and create table
 ```bash
-
+  #Install MySQL connector
+  apt install mysql-client -y
+  
   # connect database
   mysql -h <RDS endpoin> -u <username> -p
   
