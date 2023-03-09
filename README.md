@@ -17,7 +17,7 @@ sudo apt install build-essential
 Install `node_modules` on this project
 
 ```bash
-  npm Install --save express
+  npm install --save express
   npm install nodemon
   npm install cors
   npm install bodyparser
