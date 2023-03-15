@@ -72,8 +72,12 @@ Make sure your SQL engine is 8.0.XX
   mapel_guru varchar(255),
   sekolah_guru varchar(255)
   );
-
+  
+  #Select table
+  use cloud_api;
+  
   # insert guru
+
   INSERT INTO guru (nama_guru, mapel_guru, sekolah_guru) VALUES ('Adi','cloud','SMK Telkom Malang');
   
   # update guru
